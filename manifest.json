@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "LI voice assistance",
+    "version": "1.0",
+    "description": "Adding the LI voice assistance to Chrome Extension documentation articles",
+    "icons": {
+      "16": "images/logo-16.png",
+      "32": "images/logo-32.png",
+      "48": "images/logo-48.png",
+      "128": "images/logo-128.png"
+    },
+    "content_scripts": [
+      {      
+        "js": ["scripts/popup.js", "scripts/content.js"],
+        "css": ["scripts/content.css"],
+        "matches": ["*://www.linkedin.com/*"]
+      }
+    ],
+    "web_accessible_resources":[{
+      "resources":["images/saved.png"],
+      "matches": ["*://www.linkedin.com/*"]
+    }], 
+    
+    "action": {
+      "default_popup": "scripts/popup.html"    
+    },
+    "permissions": ["storage"] 
+  }

@@ -1,0 +1,26 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #a29bfe;
+}
+
+#toggle-button{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #74b9ff;
+    border: none;
+    outline: none;
+    margin: 20px auto;
+    border-radius: 3px;
+    font-size: 16px;
+}
